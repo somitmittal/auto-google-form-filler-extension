@@ -1,11 +1,11 @@
-# Google Form Filler Chrome Extension
+# Google Form Filler Browser Extension
 
 Automatically fills Google Forms with your predefined information using smart field mapping.
 
 ## Features
 
 - **Auto-fills** your name, phone, email, CTC, job location, and preferred location on Google Forms.
-- **AI-like mapping**: Recognizes various label phrasings (e.g., "Current job location", "Present working location", "Compensation", "Package", etc.) and fills the correct value.
+- **Field mapping**: Recognizes various label phrasings (e.g., "Current job location", "Present working location", "Compensation", "Package", etc.) and fills the correct value.
 - Works on all Google Forms.
 
 ## How It Works
@@ -15,7 +15,7 @@ The extension scans Google Forms for input fields and matches their labels to yo
 ## Installation
 
 1. Clone or download this repository.
-2. Open Chrome and go to `chrome://extensions/`.
+2. For Chrome, open chrome and go to `chrome://extensions/`.
 3. Enable **Developer mode** (top right).
 4. Click **Load unpacked** and select the project folder.
 5. The extension icon should appear in your browser.
@@ -26,12 +26,18 @@ To change your personal information, edit the `userInfo` object in `js/content.j
 
 ```js
 const userInfo = {
-  name: "Your Name",
-  phone: "Your Phone",
-  email: "your@email.com",
-  ctc: "Your CTC",
-  job_location: "Your Current Job Location",
-  preferred_location: "Your Preferred Location(s)"
+  name: "<your_name>",
+  phone: "<your_number>",
+  email: "<your_email>",
+  ctc: "<your_ctc>",
+  job_location: "<location>",
+  preferred_location: "<location>",
+  years_of_experience: "<years_of_experience>",
+  notice_period: "<notice_period_in_days>",
+  current_role: "<role>",
+  current_company: "<current_company_name>",
+  linkedin: "<linkedin_profile_url>",
+  github: "<github_profile_url>",
 };
 ```
 
