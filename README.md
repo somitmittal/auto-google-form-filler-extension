@@ -19,6 +19,7 @@ The extension scans Google Forms for input fields and matches their labels to yo
 3. Enable **Developer mode** (top right).
 4. Click **Load unpacked** and select the project folder.
 5. The extension icon should appear in your browser.
+6. Allow the extension to access site urls. [Check the permissions folder for the screenshot of permissions required].
 
 ## Configuration
 
