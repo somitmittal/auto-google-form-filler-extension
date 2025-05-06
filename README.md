@@ -12,15 +12,6 @@ Automatically fills Google Forms with your predefined information using smart fi
 
 The extension scans Google Forms for input fields and matches their labels to your information using a flexible keyword mapping system. This ensures that even if the field names vary, your data is filled in the right place.
 
-## Installation
-
-1. Clone or download this repository.
-2. For Chrome, open chrome and go to `chrome://extensions/`.
-3. Enable **Developer mode** (top right).
-4. Click **Load unpacked** and select the project folder.
-5. The extension icon should appear in your browser.
-6. Allow the extension to access site urls. [Check the permissions folder for the screenshot of permissions required].
-
 ## Configuration
 
 To change your personal information, edit the `userInfo` object in `js/content.js`:
@@ -41,6 +32,20 @@ const userInfo = {
   github: "<github_profile_url>",
 };
 ```
+
+## Installation
+
+1. Clone or download this repository.
+2. For Chrome, open chrome and go to `chrome://extensions/`.
+3. Enable **Developer mode** (top right).
+4. Click **Load unpacked** and select the project folder.
+5. The extension icon should appear in your browser.
+6. Allow the extension to access site urls. [Check the permissions folder for the screenshot of permissions required].
+7. Reload the extension if you make any changes to the configuration.
+
+## Usage
+1. Navigate to a Google Form.
+2. The extension will automatically fill the form with your information if your setting is configured to change site data automatically else will change on-click.
 
 ## Future Enhancements
 - Support for more Google Form types.
